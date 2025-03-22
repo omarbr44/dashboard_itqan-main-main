@@ -467,3 +467,10 @@ div.dataTables_wrapper div.dataTables_paginate {
             content: "→"; 
             margin-left: 8px;
         }
+
+        /* modal styles */
+        .modal-input-container {
+            overflow-y: auto;
+            height: 25rem;
+            padding: 1rem;;
+        }
