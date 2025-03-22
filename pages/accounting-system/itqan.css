@@ -452,4 +452,18 @@ div.dataTables_wrapper div.dataTables_paginate {
         .previous, .next {
             border: 1px solid #d0d5dd;
             box-shadow: 0px 1.09px 2.18px 0px rgba(16, 24, 40, 0.05);
+            position: relative;
+            padding: 8px 16px;
+        }
+        
+        
+        .next::after {
+            content: "←"; 
+            margin-right: 8px;
+        }
+        
+        
+        .previous::before {
+            content: "→"; 
+            margin-left: 8px;
         }
