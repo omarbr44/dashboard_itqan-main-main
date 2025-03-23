@@ -436,6 +436,11 @@ div.dataTables_wrapper div.dataTables_paginate {
         background-color: #fff; /* Background color */
         color: #667085; /* Text color */
         transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        cursor: pointer;
+    }
+
+    .dataTables_paginate span {
+        display: flex;
     }
 
         /* Style the active/inactive pagination links */
