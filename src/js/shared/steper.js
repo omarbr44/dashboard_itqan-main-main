@@ -10,21 +10,8 @@ class Steper extends HTMLElement {
 
   render() {
     this.innerHTML = `
-    <head>
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.css" rel="stylesheet" />
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="../../../app.js"></script>
-
-  </head>
-      <style>
-        /* Add your CSS styles here, or link to an external stylesheet */
-        @tailwind base;
-        @tailwind components;
-        @tailwind utilities;
-      </style>
-      <div>
-    <ol class="mt-3 flex items-center w-full p-3 space-x-2 text-sm font-medium text-center text-gray-500 bg-white  border-gray-200 rounded-lg shadow-sm sm:text-base sm:p-4 sm:space-x-4 rtl:space-x-reverse">
+      <div class="bg-white dark:bg-gray-800">
+    <ol class="mt-3 flex items-center w-full p-3 space-x-2 text-sm font-medium text-center text-gray-500 dark:text-white border-gray-200 dark:border-white rounded-lg shadow-sm sm:text-base sm:p-4 sm:space-x-4 rtl:space-x-reverse">
     <li class="flex items-center cursor-pointer text-blue-600">
          <span class="flex items-center justify-center w-[24px] h-[24px] me-2 text-xs rounded-full shrink-0">
          <img src=${this.getAttribute('baseStep')} class='w-full' />
@@ -38,7 +25,7 @@ class Steper extends HTMLElement {
          <span class="flex items-center justify-center w-[24px] h-[24px] me-2 text-xs rounded-full shrink-0">
          <img src=${this.getAttribute('firstStep')} class='w-full' />
          </span>
-         <span class="hidden sm:inline-flex text-[#C1C2C3]">${this.getAttribute('firstTitle')}</span>
+         <span class="hidden sm:inline-flex text-[#C1C2C3] dark:text-white">${this.getAttribute('firstTitle')}</span>
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.5023 17.2253C12.344 17.2253 12.1857 17.1669 12.0607 17.0419L6.62734 11.6086C5.74401 10.7253 5.74401 9.27526 6.62734 8.39193L12.0607 2.95859C12.3023 2.71693 12.7023 2.71693 12.944 2.95859C13.1857 3.20026 13.1857 3.60026 12.944 3.84193L7.51068 9.27526C7.11068 9.67526 7.11068 10.3253 7.51068 10.7253L12.944 16.1586C13.1857 16.4003 13.1857 16.8003 12.944 17.0419C12.819 17.1586 12.6607 17.2253 12.5023 17.2253Z" fill="#C1C2C3"/>
 </svg>
